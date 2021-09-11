@@ -63,5 +63,5 @@ def help():
     print("Enter a string of characters representing wires 1-6 from left to right respectively.")
     print("- [ ]    Color code (h c)")
     print("- [,]    None")
-    print("Ex: `# w rwb,B`")
+    print("Ex: `# w rwb,B,`")
     print("<<< ----------- >>>")
