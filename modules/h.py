@@ -4,7 +4,7 @@ import modules
 def main(prompt: str):
     args = prompt.split()
 
-    if len(args) < 2 or args[1][0] not in "wbksfmMWSzphld":
+    if len(args) < 2 or args[1][0] not in "wbksfmMWSzpc":
         print("<<< Help >>>")
         print("Enter a valid module command as an argument.")
         print("Use `l` to list modules.")

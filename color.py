@@ -1,0 +1,5 @@
+RED = 'r'
+BLUE = 'b'
+WHITE = 'w'
+YELLOW = 'y'
+BLACK = 'B'

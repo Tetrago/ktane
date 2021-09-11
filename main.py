@@ -1,4 +1,13 @@
 import modules
+import storage
+
+
+def input_data():
+    print("<<< Data >>>")
+    storage.serial_number = input("Serial number: ").upper()
+    storage.batteries = input("Comma delimited string of batteries [a,a,d]: ").split(',')
+    storage.lit_indicators = input("Comma delimited list of lit indicators [snd,trn]: ").split(',')
+    print("<<< ---- >>>")
 
 
 def input_modules():
@@ -25,6 +34,7 @@ def modules_prompt() -> bool:
 def modules_list():
     print("<<< Modules >>>")
     print("Please enter the details of ever module on the device.")
+    print("Unless otherwise specified, enter lowercase letters.")
     print("- [w]    Wires")
     print("- [b]    Button")
     print("- [k]    Keypad")
@@ -43,4 +53,5 @@ def modules_list():
 
 
 if __name__ == '__main__':
+    input_data()
     input_modules()
