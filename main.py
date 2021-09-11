@@ -23,6 +23,10 @@ def modules_prompt() -> bool:
         return True
     elif prompt[0] == 'd':
         return False
+    elif prompt[0] == 'r':
+        print("<<< Reset >>>")
+        input_data()
+        print("<<< ----- >>>")
     elif prompt[0] == 'l':
         modules_list()
     elif prompt[0] in "wbksfmMWSzphld":
@@ -49,6 +53,7 @@ def modules_list():
     print("- [h_]   Help")
     print("- [l]    List modules")
     print("- [d]    Done")
+    print("- [r]    Reset")
     print("<<< ------- >>>")
 
 

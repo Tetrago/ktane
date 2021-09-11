@@ -1,9 +1,9 @@
 from color import *
-from storage import batteries, lit_indicators
+import storage
 
 
 def hold():
-    print("Hold.")
+    print(">>> Hold.")
     color = input("Color of the strip: ")
 
     if color == BLUE:
@@ -30,11 +30,11 @@ def main(prompt: str):
 
     if color == BLUE and text == "abort":
         hold()
-    elif len(batteries) > 1 and text == "detonate":
+    elif len(storage.batteries) > 1 and text == "detonate":
         print(">>> Press and release.")
-    elif color == WHITE and "car" in lit_indicators:
+    elif color == WHITE and "car" in storage.lit_indicators:
         hold()
-    elif len(batteries) > 2 and "frk" in lit_indicators:
+    elif len(storage.batteries) > 2 and "frk" in storage.lit_indicators:
         print(">>> Press and release.")
     elif color == YELLOW:
         hold()
